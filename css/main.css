@@ -110,6 +110,11 @@
     color: var(--dark-gray);
 
 }
+.content .task .text .annotation {
+    color: var(--light-gray);
+    font-size: 0.7em;
+}
+
 
 /* content checkboxes */
 
