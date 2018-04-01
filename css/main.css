@@ -168,10 +168,14 @@
 }
 
 .navbar {
-    /*position: fixed;*/
-    /*width: 100%;*/
-    height: 5rem;
+    font-size: 1em;
+    height: 5em;
     padding: 1.5rem 3rem;
+    transition: all 0.4s ease;
+}
+
+.navbar.shrink {
+    height: 3.3em;
 }
 
 .container-fluid {

@@ -25,6 +25,15 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 <script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.navbar').addClass('shrink');
+        } else {
+            $('.navbar').removeClass('shrink');
+        }
+    });
+
+
     function includeHTML() {
         var z, i, elmnt, file, xhttp;
         z = document.getElementsByTagName("*");
