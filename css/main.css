@@ -14,7 +14,7 @@
     --green: #28a745;
     --teal: #20c997;
     --cyan: #17a2b8;
-    --white: #fff;
+    --white: #f8f8f8;
     --light-gray: #ccc;
     --gray: #565d63;
     --dark-gray: #363d42;
@@ -42,9 +42,9 @@
 
 }
 
-/* content -nav */
+/* content top */
 
-.content .content-nav .top{
+.content .content-nav .top {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
@@ -52,33 +52,31 @@
     margin-bottom: 2em;
 }
 
-.content .content-nav .numbers{
+.content .content-nav .numbers {
     display: flex;
     flex-flow: wrap row;
     justify-content: center;
 }
 
-.content .content-nav .numbers a{
+.content .content-nav .numbers a {
     margin: 0.2em 0.8em;
     color: var(--gray);
 
 }
 
-.content .content-nav .numbers a:hover{
+.content .content-nav .numbers a:hover {
     color: var(--black);
 }
 
-
-.content .content-nav .top .subject{
+.content .content-nav .top .subject {
     padding: 0.5% 2%;
 }
 
-.content .content-nav .top .subject a{
+.content .content-nav .top .subject a {
     color: var(--gray);
 }
 
-
-.content .content-nav .top .subject a:hover{
+.content .content-nav .top .subject a:hover {
     color: var(--black);
 }
 
@@ -87,33 +85,82 @@
     min-height: 50em;
 }
 
-.content .content-nav{
+.content .content-nav {
     padding: 1.5% 3%;
 }
 
-
 /***********/
 
+/* content mid */
 
-/* content -mid */
-
-.content .task{
+.content .task {
     margin-top: 2em;
+    background-color: var(--white);
+    padding: 2% 30%;
+
 }
 
-.content .task .text{
-    padding: 2% 10%;
+/* content text */
+
+.content .task .text {
+    margin-bottom: 2em;
 }
 
-
-.content .task .text *{
+.content .task .text * {
     color: var(--dark-gray);
 
 }
 
+/* content checkboxes */
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxes span {
+    margin-left: .5em;
+}
+
+.checkboxes * {
+    color: var(--dark-gray);
+}
+
+.checkboxes .question-option {
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+
+
 
 /***********/
 
+/* content bottom */
+
+.content .task .bottom-panel {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+
+    margin-bottom: 3em;
+}
+
+.content .task .bottom-panel .explanation span {
+    color: var(--light-gray);
+    cursor: pointer;
+}
+
+.content .task .bottom-panel .explanation span:hover {
+    text-decoration: underline;
+}
+
+.content .task .explanation-text span {
+    color: var(--light-gray);
+}
+
+
+/***********/
 
 /* footer */
 
@@ -122,7 +169,7 @@
     flex-flow: wrap column;
     justify-content: center;
 
-    padding: 1% 10%;
+    padding: 1% 30%;
     background-color: var(--light);
     width: 100%;
     min-height: 10em;
@@ -137,14 +184,12 @@
     margin: 0.3em 0;
 }
 
-
 .footer .footer-item .footer-item {
     min-height: 3em;
     min-width: 3em;
     width: auto;
     margin: 1em 0.5em;
 }
-
 
 .footer .footer-item .footer-item .footer-top {
     margin-bottom: 2em;
@@ -183,9 +228,7 @@
     border-radius: 10px;
 }
 
-
 /***********/
-
 
 /* navbar */
 
@@ -223,18 +266,15 @@
     height: 3.3em;
 }
 
-
 /***********/
-
 
 .flex-space-around {
     justify-content: space-around;
 }
 
 .flex-space-between {
-    justify-content:    space-between;
+    justify-content: space-between;
 }
-
 
 .flex-item-column {
     flex-direction: column;
@@ -251,6 +291,7 @@
 .bottom-grey-string {
     border-bottom: solid 1px var(--light-gray);
 }
+
 .active {
     color: var(--edera-orange) !important;
 }
@@ -258,7 +299,6 @@
 .active:hover {
     color: var(--edera-dark-orange) !important;
 }
-
 
 .btn-grey {
     background-color: var(--white);
@@ -270,6 +310,21 @@
 }
 
 .btn-grey:hover {
+    border: solid 1px var(--black);
+    color: var(--black);
+}
+
+.btn-light-grey {
+    color: var(--light-gray);
+    background-color: var(--white);
+    cursor: pointer;
+    border: solid 1px var(--light-gray);
+    border-radius: 0.5em;
+    padding: 0.5em 2em;
+
+}
+
+.btn-light-grey:hover {
     border: solid 1px var(--black);
     color: var(--black);
 }
@@ -288,12 +343,12 @@
     background-color: var(--edera-dark-orange);
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: inherit;
 }
