@@ -152,8 +152,8 @@
     color: var(--edera-orange);
 }
 
-.footer .footer-item .footer-item .footer-social-ico {
-    float: right;
+.footer-social-ico {
+    /*float: right;*/
     margin: 0 0 0.5em 1em;
     background-color: black;
     width: 15px;
