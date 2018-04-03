@@ -110,11 +110,11 @@
     color: var(--dark-gray);
 
 }
+
 .content .task .text .annotation {
     color: var(--light-gray);
     font-size: 0.7em;
 }
-
 
 /* content checkboxes */
 
@@ -136,12 +136,11 @@
     cursor: pointer;
 }
 
-.checkboxes .question-radio{
+.checkboxes .question-radio {
     background: white;
     box-shadow: none;
     border: 1px solid var(--light-gray);
 }
-
 
 /***********/
 
@@ -167,7 +166,6 @@
 .content .task .explanation-text span {
     color: var(--light-gray);
 }
-
 
 /***********/
 
@@ -241,34 +239,37 @@
 
 /* navbar */
 
-.navbar-light .navbar-nav .nav-link .active {
-    color: var(--edera-orange) !important;
-}
-
-.navbar-light .navbar-nav .nav-link.active:hover {
-    color: var(--edera-dark-orange) !important;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: var(--dark-gray);
-    margin: 0 20px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: var(--dark-gray);
-    margin: 0 20px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: var(--black);
-    margin: 0 20px;
-}
-
 .navbar {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+
     font-size: 1em;
     height: 5em;
     padding: 1.5% 3%;
     transition: all 0.4s ease;
+}
+
+.navbar .left {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+}
+
+.navbar .right{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+
+}
+
+.navbar * .item .link {
+    color: var(--gray);
+    margin: 0 20px;
+}
+
+.navbar * .item .link:hover {
+    color: var(--black);
 }
 
 .navbar.shrink {
@@ -362,7 +363,7 @@ a:hover {
     color: inherit;
 }
 
-.invisible{
+.invisible {
     margin: 0;
     padding: 0;
     opacity: 1;
