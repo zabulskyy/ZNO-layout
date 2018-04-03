@@ -2,7 +2,7 @@
     --edera-blue: rgb(0, 80, 140);
     --edera-light-orange: rgb(250, 200, 100);
     --edera-orange: rgb(250, 175, 0);
-    --edera-dark-orange: rgb(250, 136, 43);
+    --edera-dark-orange: rgb(255, 160, 15   );
 
     --blue: #007bff;
     --indigo: #6610f2;
@@ -16,7 +16,7 @@
     --cyan: #17a2b8;
     --white: #f8f8f8;
     --light-gray: #ccc;
-    --gray: #565d63;
+    --gray: #676f76;
     --dark-gray: #363d42;
     --black: #222;
     --primary: #007bff;
@@ -68,7 +68,6 @@
     color: var(--black);
 }
 
-
 .content .content-nav .top .subject a {
     color: var(--gray);
 }
@@ -114,30 +113,51 @@
 
 /* content checkboxes */
 
-.checkboxes {
+.answers {
     display: flex;
     flex-direction: column;
     padding: 2% 30%;
 
 }
 
-.checkboxes span {
+.answers span {
     margin-left: .5em;
 }
 
-.checkboxes * {
+.answers * {
     color: var(--dark-gray);
 }
 
-.checkboxes .question-label {
+.answers .question-label {
     margin-bottom: 1em;
     cursor: pointer;
 }
 
-.checkboxes .question-radio {
+
+/*buttons*/
+
+.question-button {
+    cursor: inherit;
+    padding: 0.5em 0.5em 0 0;
+    height: 1em;
+    width: 1em;
     background: white;
-    box-shadow: none;
+    box-shadow: 0 1px 2px gray inset;
     border: 1px solid var(--light-gray);
+
+}
+
+.question-label.active .question-button{
+    box-shadow: none;
+    border: 0;
+    background: radial-gradient(#fff 30%, var(--edera-orange) 0);
+}
+
+.radio .question-button {
+}
+
+.checkbox .question-button {
+    border-radius: 50%;
 }
 
 /***********/
@@ -149,10 +169,7 @@
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
-
-    margin-bottom: 3em;
 }
-
 
 .content .task .bottom-panel .explanation span {
     color: var(--light-gray);
@@ -171,6 +188,7 @@
     padding: 2% 20%;
 
 }
+
 /***********/
 
 /* footer */
@@ -267,7 +285,7 @@
     align-items: center;
 }
 
-.navbar .right{
+.navbar .right {
     display: flex;
     flex-flow: wrap row;
     align-items: center;
@@ -276,7 +294,7 @@
 
 .navbar * .item .link {
     color: var(--gray);
-    margin: 0 20px;
+    margin: 0 1.5em;
 }
 
 .navbar * .item .link:hover {
@@ -284,8 +302,8 @@
 }
 
 .navbar.shrink {
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
 
 /***********/
@@ -322,7 +340,8 @@
     color: var(--edera-dark-orange) !important;
 }
 
-.btn-grey {
+.btn-gray {
+    color: var(--gray);
     background-color: var(--white);
     cursor: pointer;
     border: solid 1px var(--light-gray);
@@ -331,12 +350,16 @@
 
 }
 
-.btn-grey:hover {
-    border: solid 1px var(--black);
+.btn-gray.disabled {
+    color: var(--light-gray);
+ }
+
+.btn-gray:hover {
+    border: solid 1px var(--gray);
     color: var(--black);
 }
 
-.btn-light-grey {
+.btn-light-gray {
     color: var(--light-gray);
     background-color: var(--white);
     cursor: pointer;
@@ -346,8 +369,8 @@
 
 }
 
-.btn-light-grey:hover {
-    border: solid 1px var(--black);
+.btn-light-gray:hover {
+    border: solid 1px var(--gray);
     color: var(--black);
 }
 
