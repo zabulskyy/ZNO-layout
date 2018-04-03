@@ -48,11 +48,11 @@
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
-
-    margin-bottom: 2em;
+    align-items: center;
 }
 
 .content .content-nav .numbers {
+    padding: 2em 1em 1em 1em;
     display: flex;
     flex-flow: wrap row;
     justify-content: center;
@@ -68,9 +68,6 @@
     color: var(--black);
 }
 
-.content .content-nav .top .subject {
-    padding: 0.5% 2%;
-}
 
 .content .content-nav .top .subject a {
     color: var(--gray);
@@ -81,12 +78,12 @@
 }
 
 .content {
-    margin-top: 5em;
+    margin-top: 6em;
     min-height: 50em;
 }
 
 .content .content-nav {
-    padding: 1.5% 3%;
+    padding: 1.5% 20%;
 }
 
 /***********/
@@ -94,16 +91,15 @@
 /* content mid */
 
 .content .task {
-    margin-top: 2em;
     background-color: var(--white);
-    padding: 2% 30%;
 
 }
 
 /* content text */
 
 .content .task .text {
-    margin-bottom: 2em;
+    padding: 2% 30%;
+
 }
 
 .content .task .text * {
@@ -121,6 +117,8 @@
 .checkboxes {
     display: flex;
     flex-direction: column;
+    padding: 2% 30%;
+
 }
 
 .checkboxes span {
@@ -147,12 +145,14 @@
 /* content bottom */
 
 .content .task .bottom-panel {
+    padding: 2% 30%;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
 
     margin-bottom: 3em;
 }
+
 
 .content .task .bottom-panel .explanation span {
     color: var(--light-gray);
@@ -167,6 +167,10 @@
     color: var(--light-gray);
 }
 
+.content .task .explanation-text {
+    padding: 2% 20%;
+
+}
 /***********/
 
 /* footer */
@@ -176,7 +180,7 @@
     flex-flow: wrap column;
     justify-content: center;
 
-    padding: 1% 30%;
+    padding: 1% 20%;
     background-color: var(--light);
     width: 100%;
     min-height: 10em;
@@ -252,6 +256,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 1em;
     height: auto;
+    max-height: 6em;
     padding: 1.5% 3%;
     transition: all 0.4s ease;
 }
