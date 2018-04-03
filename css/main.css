@@ -2,7 +2,7 @@
     --edera-blue: rgb(0, 80, 140);
     --edera-light-orange: rgb(250, 200, 100);
     --edera-orange: rgb(250, 175, 0);
-    --edera-dark-orange: rgb(250, 104, 19);
+    --edera-dark-orange: rgb(250, 136, 43);
 
     --blue: #007bff;
     --indigo: #6610f2;
@@ -131,12 +131,16 @@
     color: var(--dark-gray);
 }
 
-.checkboxes .question-option {
+.checkboxes .question-label {
     margin-bottom: 1em;
     cursor: pointer;
 }
 
-
+.checkboxes .question-radio{
+    background: white;
+    box-shadow: none;
+    border: 1px solid var(--light-gray);
+}
 
 
 /***********/
@@ -230,7 +234,7 @@
     background-color: black;
     width: 15px;
     height: 15px;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 /***********/
@@ -335,7 +339,7 @@
 }
 
 .btn-orange {
-    padding: .5em 1em;
+    padding: 0.5em 2em;
     box-sizing: border-box;
     cursor: pointer;
     border: solid 1px var(--edera-orange);
@@ -356,4 +360,10 @@ a {
 a:hover {
     text-decoration: none;
     color: inherit;
+}
+
+.invisible{
+    margin: 0;
+    padding: 0;
+    opacity: 1;
 }
