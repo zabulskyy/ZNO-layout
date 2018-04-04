@@ -15,6 +15,7 @@
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #f8f8f8;
+    --very-light-gray: #ddd;
     --light-gray: #ccc;
     --gray: #676f76;
     --dark-gray: #363d42;
@@ -38,8 +39,7 @@
 
 * {
     font-family: var(--font-family-sans-serif), sans-serif;
-    font-size: 1.01em;
-
+    color: var(--dark-gray);
 }
 
 .container {
@@ -105,7 +105,7 @@
 /* content text */
 
 .content .task .text {
-    padding: 2% 30%;
+    padding: 0.5% 30%;
 
 }
 
@@ -124,12 +124,19 @@
 .answers {
     display: flex;
     flex-direction: column;
-    padding: 2% 30%;
+    padding: 0.5% 30%;
 
 }
 
-.answers span {
-    margin-left: .5em;
+.answers.connect {
+    display: inherit !important;
+    flex-direction: unset !important;
+    padding: 0 !important;
+
+}
+
+.answers .question-text {
+    margin-left: 0.75em;
 }
 
 .answers * {
@@ -141,9 +148,102 @@
     cursor: pointer;
 }
 
-/*buttons*/
+/*connect*/
 
-.question-button {
+/*task-connect*/
+
+.task-connect {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    padding: 0.5% 20%;
+
+}
+
+.task-connect .left, .task-connect .right {
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.task-connect .title {
+    margin-bottom: 2em;
+    font-style: italic;
+}
+
+.task-connect .question {
+    margin-bottom: 1.5em;
+}
+
+.task-connect .mark {
+    background-color: var(--very-light-gray);
+    padding: 0.5em 0.8em;
+}
+
+/*answers-connect*/
+
+.answers-connect {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0.5% 30%;
+}
+
+.answers-connect .row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.answers-connect .cell {
+    margin: 0.1em;
+    position: relative;
+}
+
+.answers-connect .cell-button {
+    padding: 1em;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 15%;
+}
+
+.answers-connect .active .cell-button {
+    background-color: var(--very-light-gray);
+    border-color: var(--black);
+}
+
+.answers-connect .cell.active:before, .answers-connect .cell.active:after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 2px;
+    background-color: var(--black);
+    top: 14px;
+}
+
+.answers-connect .cell.active:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: -2px;
+}
+
+.answers-connect .cell.active:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: -2px;
+}
+
+.answers-connect .cell-mark-horizontal{
+    width: 2em;
+}
+
+.answers-connect .cell-mark-vertical{
+    width: 1.4em;
+    padding-top: 0.5em;
+}
+
+/********/
+
+.connect .question-button {
     cursor: inherit;
     padding: 0.5em 0.5em 0 0;
     height: 1em;
@@ -151,12 +251,47 @@
     background: white;
     box-shadow: 0 1px 2px gray inset;
     border: 0;
+}
+
+.active .question-button {
+    background: radial-gradient(var(--white) 30%, var(--edera-orange) 0%);
 
 }
 
-.question-label.active .question-button {
-    background: radial-gradient(var(--white) 30%, var(--edera-orange) 0%);
+.question-label.active .question-text {
+}
 
+.question-label .question-text:hover {
+    color: var(--black);
+}
+
+.radio .question-button {
+}
+
+.checkbox .question-button {
+    border-radius: 50%;
+}
+
+/********/
+
+/*buttons*/
+
+.radio .question-button, .checkbox .question-button {
+    cursor: inherit;
+    padding: 0.5em 0.5em 0 0;
+    height: 1em;
+    width: 1em;
+    background: white;
+    box-shadow: 0 1px 2px gray inset;
+    border: 0;
+}
+
+.radio .active .question-button, .checkbox .active .question-button {
+    background: radial-gradient(var(--white) 30%, var(--edera-orange) 0%);
+}
+
+.radio .question-button.active, .checkbox .question-button.active {
+    background: radial-gradient(var(--white) 30%, var(--edera-orange) 0%);
 }
 
 .question-label.active .question-text {
@@ -178,7 +313,7 @@
 /* content bottom */
 
 .content .task .bottom-panel {
-    padding: 2% 30%;
+    padding: 0.5% 30%;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
@@ -198,7 +333,7 @@
 }
 
 .content .task .explanation-text {
-    padding: 2% 20%;
+    padding: 3% 30%;
 
 }
 
@@ -211,7 +346,7 @@
     flex-flow: wrap column;
     justify-content: center;
 
-    padding: 1% 20%;
+    padding: 0.5% 20%;
     background-color: var(--light);
     min-height: 10em;
 }
@@ -394,8 +529,11 @@
     cursor: pointer;
     border: solid 1px var(--edera-orange);
     background-color: var(--edera-orange);
-    color: var(--white) !important;
     border-radius: 0.5em;
+}
+
+.btn-orange * {
+    color: var(--white) !important;
 }
 
 .btn-orange:hover {
@@ -415,5 +553,5 @@ a:hover {
 .invisible {
     margin: 0;
     padding: 0;
-    opacity: 1;
+    opacity: 0;
 }
