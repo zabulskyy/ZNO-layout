@@ -2,7 +2,7 @@
     --edera-blue: rgb(0, 80, 140);
     --edera-light-orange: rgb(250, 200, 100);
     --edera-orange: rgb(250, 175, 0);
-    --edera-dark-orange: rgb(255, 160, 15   );
+    --edera-dark-orange: rgb(255, 160, 15);
 
     --blue: #007bff;
     --indigo: #6610f2;
@@ -40,6 +40,14 @@
     font-family: var(--font-family-sans-serif), sans-serif;
     font-size: 1.01em;
 
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* content top */
@@ -133,7 +141,6 @@
     cursor: pointer;
 }
 
-
 /*buttons*/
 
 .question-button {
@@ -143,14 +150,20 @@
     width: 1em;
     background: white;
     box-shadow: 0 1px 2px gray inset;
-    border: 1px solid var(--light-gray);
+    border: 0;
 
 }
 
-.question-label.active .question-button{
-    box-shadow: none;
-    border: 0;
-    background: radial-gradient(#fff 30%, var(--edera-orange) 0);
+.question-label.active .question-button {
+    background: radial-gradient(var(--white) 30%, var(--edera-orange) 0%);
+
+}
+
+.question-label.active .question-text {
+}
+
+.question-label .question-text:hover {
+    color: var(--black);
 }
 
 .radio .question-button {
@@ -200,15 +213,10 @@
 
     padding: 1% 20%;
     background-color: var(--light);
-    width: 100%;
     min-height: 10em;
 }
 
 .footer .footer-item {
-    flex-direction: column;
-    display: flex;
-    flex-flow: wrap row;
-
     width: auto;
     margin: 0.3em 0;
 }
@@ -227,25 +235,29 @@
 .footer .footer-item .footer-item .footer-small-text {
     margin-bottom: 1em;
     font-size: 0.7em;
-    color: var(--black);
+    color: var(--dark-gray);
 }
 
 .footer .footer-item .footer-item .footer-header-text {
     font-size: 1em;
-    color: var(--black);
+    color: var(--dark-gray);
 
 }
 
 .footer .footer-item .footer-item .footer-option-text {
-    margin-bottom: 1em;
     font-size: 0.9em;
-    color: var(--dark-gray);
+    color: var(--gray);
+
+}
+
+.footer .footer-item .footer-item .footer-option {
+    margin-bottom: 0.6em;
 
 }
 
 .footer .footer-item .footer-item .footer-text-link:hover {
     text-decoration: none;
-    color: var(--edera-orange);
+    color: var(--dark-gray);
 }
 
 .footer-social-ico {
@@ -316,15 +328,17 @@
     justify-content: space-between;
 }
 
-.flex-item-column {
-    flex-direction: column;
+.flex-column {
+    display: flex;
+    flex-flow: wrap column;
 }
 
-.flex-item-row {
-    flex-direction: row;
+.flex-row {
+    display: flex;
+    flex-flow: wrap row;
 }
 
-.container-fluid {
+.container {
     padding: 0;
 }
 
@@ -352,7 +366,7 @@
 
 .btn-gray.disabled {
     color: var(--light-gray);
- }
+}
 
 .btn-gray:hover {
     border: solid 1px var(--gray);
