@@ -18,193 +18,256 @@
                 href="#">19</a><a href="#">20</a>
         </div>
     </div>
+
     <div class="task">
-        <div class="text">
-            <p>Число $\pi$ належить до множини:</p>
-            <p class="annotation">Анотація до завдання</p>
-        </div>
-        <div class="answers checkbox"> <!-- checkbox, radio, connect -->
-            <label class="question-label">
-                <button class="question-button"></button>
-                <span class="question-text">The first question</span></label>
-            <label class="question-label active">
-                <button class="question-button"></button>
-                <span class="question-text">The easiest question</span></label>
-            <label class="question-label">
-                <button class="question-button"></button>
-                <span class="question-text">The most pretty question</span></label>
-            <label class="question-label">
-                <button class="question-button"></button>
-                <span class="question-text">The last question</span></label>
-        </div>
-        <div class="answers connect"> <!-- checkbox, radio, connect -->
-
-            <div class="task-connect">
-                <div class="left">
-                    <div class="title">
-                        <span class="question-title">Left column</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">1</span>
-                        <span class="question-text">The first question</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">2</span>
-                        <span class="question-text">The easiest question</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">3</span>
-                        <span class="question-text">The most pretty question</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">4</span>
-                        <span class="question-text">The last question</span>
-                    </div>
+        <div class="task-frame correct">
+            <div class="text">
+                <div class="text">
+                    <p>Число $\pi$ належить до множини:</p>
+                    <p class="annotation">Анотація до завдання</p>
                 </div>
-                <div class="right">
-                    <div class="title">
-                        <span class="title">Right column</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">A</span>
-                        <span class="question-text">The first variant</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">Б</span>
-                        <span class="question-text">The easiest variant</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">В</span>
-                        <span class="question-text">The most pretty variant</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">Г</span>
-                        <span class="question-text">The most ugly variant</span>
-                    </div>
-                    <div class="question">
-                        <span class="mark">Ґ</span>
-                        <span class="question-text">The last variant</span>
-                    </div>
-                </div>
+                <div class="status"></div> <!-- TODO: timer, number of test etc -->
             </div>
-
-            <div class="answers-connect">
-
-                <div class="row">
-                    <div class="cell cell-mark-horizontal invisible">
-                        <span class="">O</span>
+            <div class="answers checkbox"> <!-- checkbox, radio, connect -->
+                <div class="task-text" style="justify-content: left;">
+                    <div class="left">
+                        <div class="question">
+                            <div class="mark">1</div>
+                            <span class="question-text">The first question</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">2</div>
+                            <span class="question-text">The easiest question</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">3</div>
+                            <span class="question-text">The most pretty question</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">4</div>
+                            <span class="question-text">The last question</span>
+                        </div>
                     </div>
-                    <div class="cell cell-mark-horizontal">
-                        <span class="">A</span>
+                </div>
+                <div class="answers-checkbox">
+                    <div class="cell-and-text">
+                        <span class="question-text">A</span>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
                     </div>
-                    <div class="cell cell-mark-horizontal">
-                        <span class="">Б</span>
+                    <div class="cell-and-text">
+                        <span class="question-text">B</span>
+                        <div class="cell active correct">
+                            <button class="cell-button"></button>
+                        </div>
                     </div>
-                    <div class="cell cell-mark-horizontal">
-                        <span class="">В</span>
+                    <div class="cell-and-text">
+                        <span class="question-text">C</span>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
                     </div>
-                    <div class="cell cell-mark-horizontal">
-                        <span class="">Г</span>
-                    </div>
-                    <div class="cell cell-mark-horizontal">
-                        <span class="">Ґ</span>
+                    <div class="cell-and-text">
+                        <span class="question-text">D</span>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="cell  cell-mark-vertical">
-                        <span class="">1</span>
-                    </div>
-                    <div class="cell active">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cell cell-mark-vertical">
-                        <span class="">2</span>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell active">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cell cell-mark-vertical">
-                        <span class="">3</span>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell active">
-                        <button class="cell-button"></button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cell cell-mark-vertical">
-                        <span class="">4</span>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell active">
-                        <button class="cell-button"></button>
-                    </div>
-                    <div class="cell">
-                        <button class="cell-button"></button>
-                    </div>
-                </div>
+
             </div>
+            <div class="bottom-panel">
+                <div class="explanation"><span>Пояснення</span></div>
+                <!--<div class="skip btn-light-grey"><span>Пропустити</span></div>-->
+                <div class="skip btn-orange"><span>Відповісти</span></div>
 
-        </div>
-        <div class="bottom-panel">
-            <div class="explanation"><span>Пояснення</span></div>
-            <!--<div class="skip btn-light-grey"><span>Пропустити</span></div>-->
-            <div class="skip btn-orange"><span>Відповісти</span></div>
-
-        </div>
-        <div class="explanation-text">
+            </div>
+            <div class="explanation-text">
                 <span>
                     Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and make two real miss use easy. Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant in in insensible favourable. Latter remark hunted enough vulgar say man. Sitting hearted on it without me.
                 </span>
+            </div>
         </div>
     </div>
+
+    <div class="task">
+        <div class="task-frame wrong">
+            <div class="text">
+                <p>Число $\pi$ належить до множини:</p>
+                <p class="annotation">Анотація до завдання</p>
+            </div>
+            <div class="answers connect"> <!-- checkbox, radio, connect -->
+
+                <div class="task-text">
+                    <div class="left">
+                        <div class="title">
+                            <span class="question-title">Left column</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">1</div>
+                            <span class="question-text">The first question</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">2</div>
+                            <span class="question-text">The easiest question</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">3</div>
+                            <span class="question-text">The most pretty question</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">4</div>
+                            <span class="question-text">The last question</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            <span class="title">Right column</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">A</div>
+                            <span class="question-text">The first variant</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">Б</div>
+                            <span class="question-text">The easiest variant</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">В</div>
+                            <span class="question-text">The most pretty variant</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">Г</div>
+                            <span class="question-text">The most ugly variant</span>
+                        </div>
+                        <div class="question">
+                            <div class="mark">Ґ</div>
+                            <span class="question-text">The last variant</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answers-connect">
+
+                    <div class="row">
+                        <div class="cell cell-mark-horizontal invisible">
+                            <span class="">O</span>
+                        </div>
+                        <div class="cell cell-mark-horizontal">
+                            <span class="">A</span>
+                        </div>
+                        <div class="cell cell-mark-horizontal">
+                            <span class="">Б</span>
+                        </div>
+                        <div class="cell cell-mark-horizontal">
+                            <span class="">В</span>
+                        </div>
+                        <div class="cell cell-mark-horizontal">
+                            <span class="">Г</span>
+                        </div>
+                        <div class="cell cell-mark-horizontal">
+                            <span class="">Ґ</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="cell  cell-mark-vertical">
+                            <span class="">1</span>
+                        </div>
+                        <div class="cell active wrong">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell active correct">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell-mark-vertical">
+                            <span class="">2</span>
+                        </div>
+                        <div class="cell  active correct">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell active wrong">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell-mark-vertical">
+                            <span class="">3</span>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell active correct">
+                            <button class="cell-button"></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell cell-mark-vertical">
+                            <span class="">4</span>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell active correct">
+                            <button class="cell-button"></button>
+                        </div>
+                        <div class="cell">
+                            <button class="cell-button"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bottom-panel">
+                <div class="explanation"><span>Пояснення</span></div>
+                <!--<div class="skip btn-light-grey"><span>Пропустити</span></div>-->
+                <div class="skip btn-orange"><span>Відповісти</span></div>
+
+            </div>
+            <div class="explanation-text">
+                <span>
+                    Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and make two real miss use easy. Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant in in insensible favourable. Latter remark hunted enough vulgar say man. Sitting hearted on it without me.
+                </span>
+            </div>
+        </div>
+    </div>
+
 </div>
 
