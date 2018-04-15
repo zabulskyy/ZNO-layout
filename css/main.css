@@ -11,10 +11,12 @@
     --pink: #e83e8c;
     --light-red: #f7cfd3;
     --red: #dc3545;
+    --dark-red: #a61a12;
     --orange: #fd7e14;
     --yellow: #ffc107;
     --light-green: #ccead3;
     --green: #28a745;
+    --dark-green: #1c7330;
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #f8f8f8;
@@ -106,7 +108,6 @@
 
 .content .task-frame {
     margin-bottom: 1em;
-    background-color: var(--white);
     padding: 0.5em 3em 1em 3em;
     border: 1px solid var(--very-light-gray);
     border-radius: 1%;
@@ -119,6 +120,7 @@
 .content .task-frame.correct {
     border-color: var(--green);
 }
+
 /* content text */
 
 .content .task .text {
@@ -287,6 +289,17 @@
     background-color: var(--red);
 }
 
+/*disabled*/
+
+.active.disabled .cell-button {
+    background-color: var(--gray);
+    border-color: var(--gray);
+}
+
+.cell.active.disabled:before, .cell.active.disabled:after {
+    opacity: 0;
+}
+
 /*************/
 
 .cell-mark-horizontal {
@@ -409,7 +422,7 @@
     justify-content: center;
 
     padding: 0.5% 20%;
-    background-color: var(--light);
+    background-color: var(--white);
     min-height: 10em;
 }
 
@@ -489,19 +502,36 @@
     transition: all 0.4s ease;
 }
 
-.navbar .left {
-    display: flex;
-    flex-flow: wrap row;
-    align-items: center;
+@media (min-width: 0px) {
+    .navbar .left {
+        display: none;
+    }
+
+    .navbar .right {
+        display: none;
+    }
+
+    .navbar .hover-button {
+
+    }
 }
 
-.navbar .right {
-    display: flex;
-    flex-flow: wrap row;
-    align-items: center;
+@media (min-width: 1200px) {
+
+    .navbar .left {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
+    }
+
+    .navbar .right {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
+
+    }
 
 }
-
 .navbar * .item .link {
     color: var(--gray);
     margin: 0 1.5em;
@@ -544,12 +574,40 @@
     border-bottom: solid 1px var(--light-gray);
 }
 
-.active {
+a.active {
     color: var(--edera-orange) !important;
 }
 
-.active:hover {
+a.active:hover {
     color: var(--edera-dark-orange) !important;
+}
+
+a.correct {
+    color: var(--green) !important;
+}
+
+a.correct:hover {
+    color: var(--dark-green) !important;
+}
+
+a.wrong {
+    color: var(--red) !important;
+}
+
+a.wrong:hover {
+    color: var(--dark-red) !important;
+}
+
+a.disabled {
+    color: var(--gray) !important;
+}
+
+a.disabled:hover {
+    color: var(--dark-gray) !important;
+}
+
+a.bold {
+    font-weight: bold;
 }
 
 .btn-gray {
