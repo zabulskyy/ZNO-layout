@@ -47,6 +47,10 @@
     color: var(--dark-gray);
 }
 
+body{
+    margin: 0;
+}
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -503,35 +507,50 @@
 }
 
 @media (min-width: 0px) {
-    .navbar .left {
+    .navbar{
+        position: relative;
+    }
+
+    .navbar .right-bg, .navbar .left-bg {
         display: none;
     }
 
-    .navbar .right {
-        display: none;
+    .navbar .left-sm {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
     }
 
-    .navbar .hover-button {
-
+    .navbar .right-sm {
+        display: flex;
+        flex-flow: wrap row;
+        align-items: center;
     }
 }
 
 @media (min-width: 1200px) {
+    .navbar{
+        position: fixed;
+    }
 
-    .navbar .left {
+    .navbar .right-sm, .navbar .left-sm {
+        display: none;
+    }
+
+    .navbar .left-bg {
         display: flex;
         flex-flow: wrap row;
         align-items: center;
     }
 
-    .navbar .right {
+    .navbar .right-bg {
         display: flex;
         flex-flow: wrap row;
         align-items: center;
-
     }
 
 }
+
 .navbar * .item .link {
     color: var(--gray);
     margin: 0 1.5em;
@@ -608,6 +627,26 @@ a.disabled:hover {
 
 a.bold {
     font-weight: bold;
+}
+
+.btn-toggle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    color: var(--gray);
+    background-color: var(--white);
+    cursor: pointer;
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+
+span.line {
+    background-color: var(--gray);
+    padding: 0.15em 0.9em;
+    margin: 0.1em 0;
+    border-radius: 1em;
 }
 
 .btn-gray {
