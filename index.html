@@ -38,6 +38,10 @@
         }
     });
 
+    function toggleMenuButton(x) {
+        x.classList.toggle("rotated");
+        $("#mobileMenu").classList.toggle("hidden");
+    }
 
     function includeHTML() {
         var z, i, elmnt, file, xhttp;

@@ -1,18 +1,18 @@
 <div class="navbar bottom-grey-string">
-    <div class="left-sm">
+    <div class="left sm">
         <a class="item logo" href="#">
             <img src="../img/edera_logo.png" height="40" width="40"/>
         </a>
     </div>
-    <div class="right-sm">
-        <button class="btn-toggle">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+    <div class="right sm">
+        <button class="btn-toggle" onclick="toggleMenuButton(this)">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
         </button>
     </div>
 
-    <div class="left-bg">
+    <div class="left bg">
         <a class="item logo" href="#">
             <img src="../img/edera_logo.png" height="40" width="40"/>
         </a>
@@ -40,12 +40,47 @@
             <a class="link " href="#">Співпраця</a>
         </div>
     </div>
-    <div class="right-bg">
+    <div class="right bg">
         <div class="item">
             <a class="link " href="#">Результати</a>
         </div>
         <div class="item">
             <button class="btn-gray">Увійти</button>
         </div>
+    </div>
+</div>
+
+<div class="menu sm closed" id="mobileMenu">
+
+    <div class="item">
+        <a class="link active" href="#">Курси</a>
+    </div>
+
+    <div class="item">
+        <a class="link " href="#">Підручники</a>
+    </div>
+
+    <div class="item">
+        <a class="link " href="#">Проекти</a>
+    </div>
+
+    <div class="item">
+        <a class="link " href="#">ЗНО платформа</a>
+    </div>
+
+    <div class="item">
+        <a class="link " href="#">Про нас</a>
+    </div>
+
+    <div class="item">
+        <a class="link " href="#">Співпраця</a>
+    </div>
+
+    <div class="item">
+        <a class="link " href="#">Результати</a>
+    </div>
+
+    <div class="item">
+        <button class="btn-gray">Увійти</button>
     </div>
 </div>
