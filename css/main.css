@@ -125,7 +125,7 @@ body {
         transition: 1s ease;
     }
 
-    .menu.closed{
+    .menu.closed {
         top: -1000px;
     }
 
@@ -134,7 +134,7 @@ body {
         margin-bottom: 1em;
     }
 
-    .menu .item .btn-gray{
+    .menu .item .btn-gray {
         font-size: 20px;
         border: 1px solid var(--light-gray);
         color: var(--dark-gray);
@@ -438,6 +438,74 @@ body {
         border-radius: 50%;
     }
 
+    /* footer */
+    .footer {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+
+        padding: 0.5%;
+        background-color: var(--white);
+        min-height: 10em;
+    }
+
+    .footer .footer-item-main {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-around;
+
+        width: auto;
+        margin: 0.3em 0;
+    }
+
+    .footer .footer-item-sub {
+        min-height: 3em;
+        min-width: 3em;
+        width: auto;
+        margin: 1em 0.5em;
+    }
+
+    .footer .footer-item-sub .footer-top {
+        margin-bottom: 2em;
+    }
+
+    .footer .footer-item-sub .footer-small-text {
+        margin-bottom: 1em;
+        font-size: 0.7em;
+        color: var(--dark-gray);
+    }
+
+    .footer .footer-item-sub .footer-header-text {
+        font-size: 1em;
+        color: var(--dark-gray);
+
+    }
+
+    .footer .footer-item-sub .footer-option-text {
+        font-size: 0.9em;
+        color: var(--gray);
+
+    }
+
+    .footer .footer-item-sub .footer-option {
+        margin-bottom: 0.6em;
+
+    }
+
+    .footer .footer-item-sub .footer-text-link:hover {
+        text-decoration: none;
+        color: var(--dark-gray);
+    }
+
+    .footer-social-ico {
+        /*float: right;*/
+        margin: 0 0 0.5em 1em;
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+
 }
 
 /* @media (min-width: 0px) ENDS */
@@ -489,6 +557,9 @@ body {
 
     .content .content-nav {
         padding: 1.5% 20%;
+    }
+    .content .task {
+        padding: 3% 20%;
     }
 
     /***********/
@@ -788,46 +859,50 @@ body {
         min-height: 10em;
     }
 
-    .footer .footer-item {
+    .footer .footer-item-main {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+
         width: auto;
         margin: 0.3em 0;
     }
 
-    .footer .footer-item .footer-item {
+    .footer .footer-item-sub {
         min-height: 3em;
         min-width: 3em;
         width: auto;
         margin: 1em 0.5em;
     }
 
-    .footer .footer-item .footer-item .footer-top {
+    .footer .footer-item-sub .footer-top {
         margin-bottom: 2em;
     }
 
-    .footer .footer-item .footer-item .footer-small-text {
+    .footer .footer-item-sub .footer-small-text {
         margin-bottom: 1em;
         font-size: 0.7em;
         color: var(--dark-gray);
     }
 
-    .footer .footer-item .footer-item .footer-header-text {
+    .footer .footer-item-sub .footer-header-text {
         font-size: 1em;
         color: var(--dark-gray);
 
     }
 
-    .footer .footer-item .footer-item .footer-option-text {
+    .footer .footer-item-sub .footer-option-text {
         font-size: 0.9em;
         color: var(--gray);
 
     }
 
-    .footer .footer-item .footer-item .footer-option {
+    .footer .footer-item-sub .footer-option {
         margin-bottom: 0.6em;
 
     }
 
-    .footer .footer-item .footer-item .footer-text-link:hover {
+    .footer .footer-item-sub .footer-text-link:hover {
         text-decoration: none;
         color: var(--dark-gray);
     }
@@ -896,21 +971,21 @@ body {
 }
 
 .flex-space-around {
-    justify-content: space-around;
+    justify-content: space-around !important;
 }
 
 .flex-space-between {
-    justify-content: space-between;
+    justify-content: space-between !important;
 }
 
 .flex-column {
-    display: flex;
-    flex-flow: wrap column;
+    display: flex !important;
+    flex-flow: wrap column !important;
 }
 
 .flex-row {
-    display: flex;
-    flex-flow: wrap row;
+    display: flex !important;
+    flex-flow: wrap row !important;
 }
 
 .container {
