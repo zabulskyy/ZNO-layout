@@ -558,6 +558,7 @@ body {
     .content .content-nav {
         padding: 1.5% 20%;
     }
+
     .content .task {
         padding: 3% 20%;
     }
@@ -969,6 +970,29 @@ body {
 
     /***********/
 }
+
+/* retina */
+@media (-webkit-min-device-pixel-ratio: 2),
+(   min--moz-device-pixel-ratio: 2),
+(     -o-min-device-pixel-ratio: 2/1),
+(        min-device-pixel-ratio: 2),
+(                min-resolution: 192dpi),
+(                min-resolution: 2dppx) {
+    .cell.active:before, .cell.active:after {
+        width: 22px !important;
+        top: 14px !important;
+    }
+
+    .cell.active:before {
+        left: -3px !important;
+    }
+
+    .cell.active:after {
+        right: -3px !important;
+    }
+}
+
+/***********/
 
 .flex-space-around {
     justify-content: space-around !important;
