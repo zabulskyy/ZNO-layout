@@ -990,6 +990,11 @@ body {
     .cell.active:after {
         right: -3px !important;
     }
+
+    .cell-mark-horizontal {
+        width: 1.55em;
+    }
+
 }
 
 /***********/
