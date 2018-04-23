@@ -979,12 +979,12 @@ body {
 (                min-resolution: 192dpi),
 (                min-resolution: 2dppx) {
     .cell.active:before, .cell.active:after {
-        width: 22px !important;
+        width: 30.5px !important;
         top: 14px !important;
     }
 
     .cell.active:before {
-        left: -3px !important;
+        left: -3.8px !important;
     }
 
     .cell.active:after {
