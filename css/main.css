@@ -116,17 +116,19 @@ body {
     }
 
     .menu {
+		z-index: 101;
         position: fixed;
         background-color: rgba(255, 255, 255, 0.9);
         width: 100%;
         display: flex;
         flex-flow: column;
         align-items: center;
-        transition: 1s ease;
+        transition: display 1s ease-in-out;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     }
 
     .menu.closed {
-        top: -1000px;
+        display: none;
     }
 
     .menu .item {
@@ -156,6 +158,7 @@ body {
     }
 
     .content .content-nav .numbers a {
+		cursor: pointer;
         margin: 0.2em 0.8em;
         color: var(--gray);
 
@@ -314,6 +317,10 @@ body {
         border: 1px solid var(--light-gray);
         border-radius: 15%;
     }
+
+	.cell-button:focus {
+		outline: none;
+	}
 
     /*cell-active*/
     .active .cell-button {
@@ -526,6 +533,7 @@ body {
     }
 
     .content .content-nav .numbers {
+		cursor: pointer;
         padding: 2em 1em 1em 1em;
         display: flex;
         flex-flow: wrap row;
@@ -690,6 +698,10 @@ body {
         border: 1px solid var(--light-gray);
         border-radius: 15%;
     }
+
+	.cell-button:focus {
+		outline: none;
+	}
 
     /*cell-active*/
     .active .cell-button {
