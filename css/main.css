@@ -116,7 +116,7 @@ body {
     }
 
     .menu {
-		z-index: 99;
+        z-index: 99;
         position: fixed;
         background-color: rgba(255, 255, 255, 0.9);
         width: 100%;
@@ -125,7 +125,7 @@ body {
         flex-flow: column;
         align-items: center;
         transition: display 1s ease-in-out;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         top: 3em;
         padding-top: 2em;
     }
@@ -161,7 +161,7 @@ body {
     }
 
     .content .content-nav .numbers a {
-		cursor: pointer;
+        cursor: pointer;
         margin: 0.2em 0.8em;
         color: var(--gray);
 
@@ -321,9 +321,9 @@ body {
         border-radius: 15%;
     }
 
-	.cell-button:focus {
-		outline: none;
-	}
+    .cell-button:focus {
+        outline: none;
+    }
 
     /*cell-active*/
     .active .cell-button {
@@ -536,7 +536,7 @@ body {
     }
 
     .content .content-nav .numbers {
-		cursor: pointer;
+        cursor: pointer;
         padding: 2em 1em 1em 1em;
         display: flex;
         flex-flow: wrap row;
@@ -702,9 +702,9 @@ body {
         border-radius: 15%;
     }
 
-	.cell-button:focus {
-		outline: none;
-	}
+    .cell-button:focus {
+        outline: none;
+    }
 
     /*cell-active*/
     .active .cell-button {
@@ -1171,6 +1171,11 @@ span.bar {
 
 .btn-orange:hover {
     background-color: var(--edera-dark-orange);
+}
+
+.content-image {
+    height: 100%;
+    width: 100%;
 }
 
 a {
