@@ -8,7 +8,7 @@ $(window).scroll(function() {
 
 function toggleMenuButton(x) {
 	x.classList.toggle("rotated");
-	if ($("#mobileMenu").offset().top >= 80) {
+	if ($("#mobileMenu").offset().top >= 30) {
 		$("#mobileMenu").addClass("closed");
 		$(document.body).css('overflow', 'auto');
 	} else {
