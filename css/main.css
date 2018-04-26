@@ -226,6 +226,13 @@ body {
         font-size: 0.7em;
     }
 
+
+    .content-image {
+        height: 100%;
+        width: 100%;
+        max-width: 25em;
+    }
+
     /* content checkboxes */
     .answers-checkbox {
         display: flex;
@@ -510,7 +517,6 @@ body {
     .footer-social-ico {
         /*float: right;*/
         margin: 0 0 0.5em 1em;
-        background-color: black;
         width: 15px;
         height: 15px;
         border-radius: 50%;
@@ -804,38 +810,6 @@ body {
         border-radius: 50%;
     }
 
-    /********/
-    /*buttons*/
-    /*.radio .question-button, .checkbox .question-button {*/
-    /*!*cursor: inherit;*!*/
-    /*!*padding: 0.5em 0.5em 0 0;*!*/
-    /*!*height: 1em;*!*/
-    /*!*width: 1em;*!*/
-    /*!*background: white;*!*/
-    /*!*box-shadow: 0 1px 2px gray inset;*!*/
-    /*!*border: 0;*!*/
-    /*cursor: pointer;*/
-    /*padding: 1em;*/
-    /*background-color: var(--white);*/
-    /*border: 1px solid var(--light-gray);*/
-    /*border-radius: 15%;*/
-    /*}*/
-    /*.radio .active .question-button, .checkbox .active .question-button {*/
-    /*background: radial-gradient(var(--white) 30%, var(--edera-orange) 0%);*/
-    /*}*/
-    /*.radio .question-button.active, .checkbox .question-button.active {*/
-    /*background: radial-gradient(var(--white) 30%, var(--edera-orange) 0%);*/
-    /*}*/
-    /*.question-label.active .question-text {*/
-    /*}*/
-    /*.question-label .question-text:hover {*/
-    /*!*color: var(--black);*!*/
-    /*}*/
-    /*.radio .question-button {*/
-    /*}*/
-    /*.checkbox .question-button {*/
-    /*border-radius: 50%;*/
-    /*}*/
     /***********/
     /* content bottom */
     .content .task .bottom-panel {
@@ -861,6 +835,14 @@ body {
     .content .task .explanation-text {
         padding: 1em 0;
 
+    }
+
+
+    .content-image {
+        height: 100%;
+        width: 100%;
+        max-width: 25em;
+        margin-left: 1em;
     }
 
     /***********/
@@ -926,7 +908,6 @@ body {
     .footer-social-ico {
         /*float: right;*/
         margin: 0 0 0.5em 1em;
-        background-color: black;
         width: 15px;
         height: 15px;
         border-radius: 50%;
@@ -990,9 +971,7 @@ body {
 @media (-webkit-min-device-pixel-ratio: 2),
 (   min--moz-device-pixel-ratio: 2),
 (     -o-min-device-pixel-ratio: 2/1),
-(        min-device-pixel-ratio: 2),
-(                min-resolution: 192dpi),
-(                min-resolution: 2dppx) {
+(        min-device-pixel-ratio: 2) {
     .cell.active:before, .cell.active:after {
         width: 30px !important;
         top: 15px !important;
@@ -1173,10 +1152,6 @@ span.bar {
     background-color: var(--edera-dark-orange);
 }
 
-.content-image {
-    height: 100%;
-    width: 100%;
-}
 
 a {
     text-decoration: none;
