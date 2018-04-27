@@ -130,6 +130,12 @@ body {
         padding-top: 2em;
     }
 
+    .menu.shrink {
+
+      top: 45px !important;
+
+    }
+
     .menu.closed {
         display: none !important;
     }
@@ -1308,4 +1314,3 @@ a:hover {
 .hidden {
     display: none;
 }
-

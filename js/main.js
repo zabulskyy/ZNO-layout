@@ -1,8 +1,10 @@
 $(window).scroll(function() {
 	if ($(document).scrollTop() > 50) {
 		$('.navbar').addClass('shrink');
+		$('.menu').addClass('shrink');
 	} else {
 		$('.navbar').removeClass('shrink');
+		$('.menu').removeClass('shrink');
 	}
 });
 
