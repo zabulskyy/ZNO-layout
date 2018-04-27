@@ -295,7 +295,6 @@ body {
         margin-right: .5em;
         background-color: var(--very-light-gray);
         width: 1em;
-        height: 1em;
         text-align: center;
         padding: 0.5em;
     }
@@ -536,7 +535,10 @@ body {
 
     .landing .image {
         height: 15em;
-        background-image: url("../img/pencils.jpg");
+        background-position: center;
+        background-image: url("../img/landing.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         /*background-position-y: -20em;*/
         margin-top: 4.5em;
     }
@@ -560,9 +562,13 @@ body {
 
     .landing .subheader {
         text-align: center;
-        margin: 1em 0 4em 0;
+        padding: 2em 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
         color: var(--gray);
         font-size: 18px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
     }
 
     .landing .bottom {
@@ -575,6 +581,7 @@ body {
 
     .landing .subject {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 24px;
@@ -584,8 +591,20 @@ body {
         padding: 1em;
         border-radius: 10px;
         transition: all 0.5s;
-        min-height: 3em;
-        min-width: 5em;
+        min-height: 10em;
+        min-width: 9em;
+        border: 1px solid rgba(204, 204, 204, 0.5);
+    }
+
+    .landing .subject .subject-image {
+
+      width: 80px;
+      border-bottom: 1px solid var(--light-gray);
+
+    }
+
+    .landing .subject .subject-text {
+
     }
 
     .landing .subject:hover {
@@ -617,7 +636,6 @@ body {
     }
 
     .content .content-nav .numbers {
-        cursor: pointer;
         padding: 2em 1em 1em 1em;
         display: flex;
         flex-flow: wrap row;
@@ -625,6 +643,7 @@ body {
     }
 
     .content .content-nav .numbers a {
+        cursor: pointer;
         margin: 0.2em 0.8em;
         color: var(--gray);
 
@@ -745,7 +764,6 @@ body {
         margin-right: .5em;
         background-color: var(--very-light-gray);
         width: 1em;
-        height: 1em;
         text-align: center;
         padding: 0.5em;
     }
@@ -1046,7 +1064,9 @@ body {
 
     .landing .image {
         height: 15em;
-        background-image: url("../img/pencils.jpg");
+        background-image: url("../img/landing.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         /*background-position-y: -20em;*/
         margin-top: 4.5em;
     }
@@ -1070,9 +1090,13 @@ body {
 
     .landing .subheader {
         text-align: center;
-        margin: 1em 0 4em 0;
+        padding: 2em 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
         color: var(--gray);
         font-size: 18px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
     }
 
     .landing .bottom {
@@ -1085,17 +1109,30 @@ body {
 
     .landing .subject {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 16px;
         text-align: center;
-        margin: .5em 1em;
+        margin: 1em 1em;
         cursor: pointer;
         padding: 1em;
         border-radius: 10px;
         transition: all 0.5s;
-        min-height: 1em;
-        min-width: 2em;
+        min-height: 10em;
+        min-width: 10em;
+        border: 1px solid rgba(204, 204, 204, 0.5);
+    }
+
+    .landing .subject .subject-image {
+
+      width: 55px;
+      border-bottom: 1px solid var(--light-gray);
+
+    }
+
+    .landing .subject .subject-text {
+
     }
 
     .landing .subject:hover {
