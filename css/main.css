@@ -81,7 +81,7 @@ body {
         font-size: 1em;
         height: auto;
         max-height: 6em;
-        padding: .5em 1em;
+        padding: 1em 1em;
         transition: all 0.4s ease;
     }
 
@@ -529,21 +529,17 @@ body {
     }
 
     .landing .image {
-        top: 10em;
         height: 15em;
-
-        /*TODO: fit to proper image*/
         background-image: url("../img/pencils.jpg");
-        background-position-y: -20em;
-        margin-top: 5em;
-        /*end TODO*/
+        /*background-position-y: -20em;*/
+        margin-top: 4.5em;
     }
 
     .landing .image-cover {
         width: 100%;
         height: 15em;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.7);
     }
 
     .landing .header {
@@ -552,8 +548,8 @@ body {
         text-align: center;
         z-index: 98;
         color: var(--dark-gray);
-        font-size: 32px;
-        top: 5em;
+        font-size: 28px;
+        top: 6em;
     }
 
     .landing .subheader {
@@ -572,7 +568,26 @@ body {
     }
 
     .landing .subject {
-        margin: 1em 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        text-align: center;
+        margin: 1em 2em;
+        cursor: pointer;
+        padding: 1em;
+        border-radius: 10px;
+        transition: all 0.5s;
+        min-height: 3em;
+        min-width: 5em;
+    }
+
+    .landing .subject:hover {
+        box-shadow: var(--light-gray) 2px 3px 20px;
+    }
+
+    .subject .text {
+
     }
 
     /***********/
@@ -983,7 +998,7 @@ body {
         font-size: 1em;
         height: auto;
         max-height: 6em;
-        padding: 1.5% 3%;
+        padding: 1em 4em;
         transition: all 0.4s ease;
     }
 
@@ -1024,26 +1039,22 @@ body {
     }
 
     .landing .image {
-        top: 10em;
         height: 15em;
-
-        /*TODO: fit to proper image*/
         background-image: url("../img/pencils.jpg");
-        background-position-y: -20em;
-        margin-top: 5em;
-        /*end TODO*/
+        /*background-position-y: -20em;*/
+        margin-top: 4.5em;
     }
 
     .landing .image-cover {
         width: 100%;
         height: 15em;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.7);
     }
 
     .landing .header {
         position: absolute;
-        top: 20%;
+        top: 4em;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 98;
@@ -1067,14 +1078,33 @@ body {
     }
 
     .landing .subject {
-        margin: 1em 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        text-align: center;
+        margin: .5em 1em;
+        cursor: pointer;
+        padding: 1em;
+        border-radius: 10px;
+        transition: all 0.5s;
+        min-height: 1em;
+        min-width: 2em;
     }
 
+    .landing .subject:hover {
+        box-shadow: var(--light-gray) 2px 3px 20px;
+    }
+
+    .subject .text {
+
+    }
     /***********/
 
 }
 
 /* retina */
+/*TODO need test and fix - probably not working on retina*/
 @media (-webkit-min-device-pixel-ratio: 2),
 (   min--moz-device-pixel-ratio: 2),
 (     -o-min-device-pixel-ratio: 2/1),
@@ -1172,7 +1202,7 @@ a.bold {
     cursor: pointer;
     border: solid 1px rgba(0, 0, 0, 0);
     border-radius: 0.5em;
-    padding: 0.5em 0.1em;
+    padding: 0em 0.1em;
 }
 
 span.bar {
