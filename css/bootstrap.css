@@ -5106,7 +5106,7 @@ tbody.collapse.show {
   }
 }
 
-.progress {
+.progress-cells {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

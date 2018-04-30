@@ -17,7 +17,20 @@
             <a href="#" class="wrong">5</a>
             <a href="#" class="wrong">6</a>
         </div>
-        <div class="progress">
+        <div class="progress-bar">
+            <!--<template>-->
+                <!--<div>-->
+                    <!--<b-progress :value="counter" :max="max" show-progress animated></b-progress>-->
+                    <!--<b-progress class="mt-1" :max="max" show-value>-->
+                        <!--<b-progress-bar :value="counter*(6/10)" variant="success"></b-progress-bar>-->
+                        <!--<b-progress-bar :value="counter*(2.5/10)" variant="warning"></b-progress-bar>-->
+                        <!--<b-progress-bar :value="counter*(1.5/10)" variant="danger"></b-progress-bar>-->
+                    <!--</b-progress>-->
+                    <!--<b-btn class="mt-4" @click="clicked">Click me</b-btn>-->
+                <!--</div>-->
+            <!--</template>-->
+        </div>
+        <div class="progress-cells">
             <div class="progress-cell">
                 <div class="image">
                     <img src="img/passed.png"/></div>
@@ -50,6 +63,9 @@
 
     <div class="task">
         <div class="task-frame correct">
+            <div class="timer warning">
+                15:33
+            </div>
             <div class="text">
                 <div class="text">
                     <p>Число $\pi$ належить до множини:</p>
@@ -102,6 +118,29 @@
                         <div class="cell">
                             <button class="cell-button"></button>
                         </div>
+                    </div>
+                </div>
+
+                <div class="answers-input">
+                    <div class="cell-and-text-input">
+                        <label>
+                            <input type="text" class="cell-input">
+                        </label>
+                    </div>
+                    <div class="cell-and-text-input">
+                        <label>
+                            <input type="text" class="cell-input">
+                        </label>
+                    </div>
+                    <div class="cell-and-text-input">
+                        <label>
+                            <input type="text" class="cell-input">
+                        </label>
+                    </div>
+                    <div class="cell-and-text-input">
+                        <label>
+                            <input type="text" class="cell-input">
+                        </label>
                     </div>
                 </div>
 

@@ -184,14 +184,14 @@ body {
     }
 
     /*progress*/
-    .content .content-nav .progress {
+    .content .content-nav .progress-cells {
         display: flex;
         justify-content: space-evenly;
         flex-flow: column;
         margin: 1em 0;
     }
 
-    .content .content-nav .progress .progress-cell {
+    .content .content-nav .progress-cells .progress-cell {
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -216,7 +216,7 @@ body {
     }
 
     .content {
-        margin-top: 5em;
+        margin-top: 7em;
         min-height: 50em;
     }
 
@@ -255,6 +255,18 @@ body {
     .content .task .text * {
         color: var(--dark-gray);
 
+    }
+
+
+    .content .task .timer {
+        float: right;
+        margin-top: 1em;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--dark-gray);
+    }
+    .content .task .timer.warning {
+        color: var(--red) !important;
     }
 
     .content .task .text .annotation {
@@ -438,6 +450,22 @@ body {
     .cell-mark-vertical {
         width: 1em;
         padding-top: 0.5em;
+    }
+
+    .answers-input{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .cell-and-text-input {
+        margin-bottom: .5em;
+    }
+
+    .cell-input{
+        width: 8em;
+        border: 1px solid var(--light-gray);
+        border-radius: 5px;
+        padding: .3em .5em;
     }
 
     /********/
@@ -698,14 +726,15 @@ body {
 
 
     /*progress*/
-    .content .content-nav .progress {
+    .content .content-nav .progress-cells {
         display: flex;
         justify-content: space-evenly;
+        flex-flow: row;
 
         margin-top: 1em;
     }
 
-    .content .content-nav .progress .progress-cell {
+    .content .content-nav .progress-cells .progress-cell {
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -760,7 +789,7 @@ body {
 
     /* content text */
     .content .task .text {
-        padding: 1em 0;
+        padding: 0 0 1em 0;
 
     }
 
@@ -772,6 +801,17 @@ body {
     .content .task .text .annotation {
         color: var(--light-gray);
         font-size: 0.7em;
+    }
+
+    .content .task .timer {
+        float: right;
+        margin-top: 1em;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--dark-gray);
+    }
+    .content .task .timer.warning {
+        color: var(--red) !important;
     }
 
 
@@ -945,6 +985,23 @@ body {
     .cell-mark-vertical {
         width: 1em;
         padding-top: 0.5em;
+    }
+
+
+    .answers-input{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .cell-and-text-input {
+        margin-right: 1em;
+    }
+
+    .cell-input{
+        width: 5em;
+        border: 1px solid var(--light-gray);
+        border-radius: 5px;
+        padding: .3em .5em;
     }
 
     /********/
