@@ -20,7 +20,7 @@
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #f8f8f8;
-    --very-light-gray: #ddd;
+    --very-light-gray: #eee;
     --light-gray: #ccc;
     --gray: #676f76;
     --dark-gray: #363d42;
@@ -571,7 +571,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 24px;
+        font-size: 18px;
         text-align: center;
         margin: 1em 2em;
         cursor: pointer;
@@ -589,7 +589,26 @@ body {
     .subject .text {
 
     }
+    .landing .search{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
 
+
+    .text-input.search{
+        border-radius: 17px;
+        box-shadow: unset;
+        border: 0;
+        padding: .5em 1em;
+        background-color: var(--very-light-gray);
+        width: 15em;
+
+        background-image: url('../img/search-icon.png');
+        background-position: 15em .5em;
+        background-repeat: no-repeat;
+        background-size: 1em;
+    }
     /***********/
 }
 
@@ -1054,17 +1073,17 @@ body {
 
     .landing .header {
         position: absolute;
-        top: 4em;
+        top: 2.75em;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 98;
         color: var(--dark-gray);
-        font-size: 48px;
+        font-size: 4.5em;
     }
 
     .landing .subheader {
         text-align: center;
-        margin: 1em 0 4em 0;
+        margin: 1em 0;
         color: var(--gray);
         font-size: 18px;
     }
@@ -1081,7 +1100,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
         margin: .5em 1em;
         cursor: pointer;
@@ -1099,6 +1118,29 @@ body {
     .subject .text {
 
     }
+
+    .landing .search{
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+    }
+
+
+    .text-input.search{
+        border-radius: 17px;
+        box-shadow: unset;
+        border: 0;
+        padding: .5em 1em;
+        background-color: var(--very-light-gray);
+        width: 20em;
+
+        background-image: url('../img/search-icon.png');
+        background-position: 20em .5em;
+        background-repeat: no-repeat;
+        background-size: 1em;
+    }
+
+
     /***********/
 
 }
