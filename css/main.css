@@ -1,54 +1,54 @@
 :root {
-	--edera-blue: rgb(0, 80, 140);
-	--edera-dark-blue: rgb(0, 70, 130);
-	--edera-light-orange: rgb(250, 200, 100);
-	--edera-orange: rgb(250, 175, 0);
-	--edera-dark-orange: rgb(255, 160, 15);
+    --edera-blue: rgb(0, 80, 140);
+    --edera-dark-blue: rgb(0, 70, 130);
+    --edera-light-orange: rgb(250, 200, 100);
+    --edera-orange: rgb(250, 175, 0);
+    --edera-dark-orange: rgb(255, 160, 15);
 
-	--blue: #007bff;
-	--indigo: #6610f2;
-	--purple: #6f42c1;
-	--pink: #e83e8c;
-	--light-red: #f7cfd3;
-	--red: #dc3545;
-	--dark-red: #a61a12;
-	--orange: #fd7e14;
-	--yellow: #ffc107;
-	--light-green: #ccead3;
-	--green: #28a745;
-	--dark-green: #1c7330;
-	--teal: #20c997;
-	--cyan: #17a2b8;
-	--white: #f8f8f8;
-	--very-light-gray: #ddd;
-	--light-gray: #ccc;
-	--gray: #676f76;
-	--dark-gray: #363d42;
-	--black: #222;
-	--primary: #007bff;
-	--secondary: #6c757d;
-	--success: #28a745;
-	--info: #17a2b8;
-	--warning: #ffc107;
-	--danger: #dc3545;
-	--light: #f8f9fa;
-	--dark: #343a40;
-	--breakpoint-xs: 0;
-	--breakpoint-sm: 576px;
-	--breakpoint-md: 768px;
-	--breakpoint-lg: 992px;
-	--breakpoint-xl: 1200px;
-	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --light-red: #f7cfd3;
+    --red: #dc3545;
+    --dark-red: #a61a12;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --light-green: #ccead3;
+    --green: #28a745;
+    --dark-green: #1c7330;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #f8f8f8;
+    --very-light-gray: #ddd;
+    --light-gray: #ccc;
+    --gray: #676f76;
+    --dark-gray: #363d42;
+    --black: #222;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 * {
-	font-family: var(--font-family-sans-serif), sans-serif;
-	color: var(--dark-gray);
+    font-family: var(--font-family-sans-serif), sans-serif;
+    color: var(--dark-gray);
 }
 
 html {
-	height: 100%;
+    height: 100%;
 }
 
 body {
@@ -588,22 +588,20 @@ body {
         border: 1px solid rgba(204, 204, 204, 0.5);
     }
 
-	.landing .subject:hover {
-		box-shadow: var(--light-gray) 2px 3px 20px;
-	}
+    .landing .subject:hover {
+        box-shadow: var(--light-gray) 2px 3px 20px;
+    }
 
-	.subject .text {
+    .subject .text {
 
     }
-    .landing .search{
+
+    .landing .search {
         display: flex;
         justify-content: center;
         margin: 0;
     }
-
-	}
-
-    .text-input.search{
+    .text-input.search {
         border-radius: 17px;
         box-shadow: unset;
         border: 0;
@@ -616,9 +614,12 @@ body {
         background-repeat: no-repeat;
         background-size: 1em;
     }
-    /***********/
-	/***********/
+
 }
+
+/***********/
+/***********/
+
 
 /* @media (min-width: 0px) ENDS */
 /***********/
@@ -1089,15 +1090,15 @@ body {
         font-size: 4.5em;
     }
 
-	.landing .subheader {
-		text-align: center;
-		padding: 2em 1em;
+    .landing .subheader {
+        text-align: center;
+        padding: 2em 1em;
         margin: 1em auto;
         width: 75%;
-		color: var(--gray);
-		font-size: 18px;
-		border-bottom: 1px solid rgba(204, 204, 204, 0.5);
-	}
+        color: var(--gray);
+        font-size: 18px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    }
 
     .landing .bottom {
         display: flex;
@@ -1107,33 +1108,33 @@ body {
 
     }
 
-	.landing .subject {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		font-size: 20px;
-		text-align: center;
-		margin: 1em 1em;
-		cursor: pointer;
-		padding: 1em;
-		border-radius: 10px;
-		transition: all 0.5s;
-		min-height: 10em;
-		min-width: 10em;
-		border: 1px solid rgba(204, 204, 204, 0.5);
-	}
+    .landing .subject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
+        margin: 1em 1em;
+        cursor: pointer;
+        padding: 1em;
+        border-radius: 10px;
+        transition: all 0.5s;
+        min-height: 10em;
+        min-width: 10em;
+        border: 1px solid rgba(204, 204, 204, 0.5);
+    }
 
-	.landing .subject .subject-image {
+    .landing .subject .subject-image {
 
-		width: 55px;
-		border-bottom: 1px solid var(--light-gray);
+        width: 55px;
+        border-bottom: 1px solid var(--light-gray);
 
-	}
+    }
 
-	.landing .subject .subject-text {
+    .landing .subject .subject-text {
 
-	}
+    }
 
     .landing .subject:hover {
         box-shadow: var(--light-gray) 2px 3px 20px;
@@ -1143,14 +1144,13 @@ body {
 
     }
 
-    .landing .search{
+    .landing .search {
         display: flex;
         justify-content: center;
         margin: 1em 0;
     }
 
-
-    .text-input.search{
+    .text-input.search {
         border-radius: 17px;
         box-shadow: unset;
         border: 0;
@@ -1163,7 +1163,6 @@ body {
         background-repeat: no-repeat;
         background-size: 1em;
     }
-
 
     /***********/
 
