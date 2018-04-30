@@ -183,6 +183,38 @@ body {
         color: var(--black);
     }
 
+    /*progress*/
+    .content .content-nav .progress {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+        margin: 1em 0;
+    }
+
+    .content .content-nav .progress .progress-cell {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 1em 0;
+    }
+
+    .content .content-nav .label {
+        font-size: 18px;
+        color: var(--gray);
+        margin-bottom: .5em;
+    }
+
+    .content .content-nav .info {
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--dark-gray);
+    }
+
+    .content .content-nav img {
+        width: 96px;
+        height: 96px;
+    }
+
     .content {
         margin-top: 5em;
         min-height: 50em;
@@ -664,6 +696,38 @@ body {
         color: var(--black);
     }
 
+
+    /*progress*/
+    .content .content-nav .progress {
+        display: flex;
+        justify-content: space-evenly;
+
+        margin-top: 1em;
+    }
+
+    .content .content-nav .progress .progress-cell {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .content .content-nav .label {
+        font-size: 18px;
+        color: var(--gray);
+        margin-bottom: 1em;
+    }
+
+    .content .content-nav .info {
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--dark-gray);
+    }
+
+    .content .content-nav img {
+        width: 96px;
+        height: 96px;
+    }
+
     .content {
         margin-top: 6em;
         min-height: 50em;
@@ -709,6 +773,7 @@ body {
         color: var(--light-gray);
         font-size: 0.7em;
     }
+
 
     /* content checkboxes */
     .answers-checkbox {
