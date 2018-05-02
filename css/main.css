@@ -435,6 +435,8 @@ body {
 		border: 1px solid var(--light-gray);
 		border-radius: 5px;
 		padding: .3em .5em;
+    font-size: 1.2em;
+    margin: .4em 0em;
 	}
 
 	/********/
@@ -983,10 +985,12 @@ body {
 	}
 
 	.cell-input{
-		width: 5em;
+		width: 8em;
 		border: 1px solid var(--light-gray);
 		border-radius: 5px;
 		padding: .3em .5em;
+    font-size: 1.2em;
+    margin: .4em 0em;
 	}
 
 	/********/
