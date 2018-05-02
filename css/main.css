@@ -1448,6 +1448,10 @@ span.bar {
 	padding: 0.5em 2em;
 }
 
+.btn-gray:focus {
+	outline: none;
+}
+
 .btn-gray.disabled {
 	color: var(--light-gray);
 }
