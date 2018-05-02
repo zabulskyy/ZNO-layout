@@ -325,7 +325,7 @@ body {
     background-size: 3em;
     background-repeat: no-repeat;
     background-position: -0.5em -0.5em;
-    border-color: var(--light-gray);
+    border-color: var(--gray);
   }
   /*correct*/
   .active.correct .cell-button {
@@ -778,7 +778,7 @@ body {
     background-image: url("../img/x-gray.svg");
     background-size: 3em;
     background-position: -0.5em -0.5em;
-    border-color: var(--light-gray);
+    border-color: var(--gray);
   }
   /*correct*/
   .active.correct .cell-button {
