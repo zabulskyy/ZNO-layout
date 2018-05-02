@@ -421,7 +421,7 @@ body {
 		padding-top: 0.5em;
 	}
 
-	.answers-input{
+	.answers-input {
 		display: flex;
 		flex-flow: column wrap;
 	}
@@ -430,13 +430,21 @@ body {
 		margin-bottom: .5em;
 	}
 
-	.cell-input{
+	.cell-input {
 		width: 8em;
 		border: 1px solid var(--light-gray);
 		border-radius: 5px;
 		padding: .3em .5em;
-    font-size: 1.2em;
-    margin: .4em 0em;
+		font-size: 1.2em;
+		margin: .4em 0em;
+	}
+
+	.input-wrong {
+		border-color: var(--red);
+	}
+
+	.input-correct {
+		border-color: var(--green);
 	}
 
 	/********/
@@ -989,8 +997,16 @@ body {
 		border: 1px solid var(--light-gray);
 		border-radius: 5px;
 		padding: .3em .5em;
-    font-size: 1.2em;
-    margin: .4em 0em;
+		font-size: 1.2em;
+		margin: .4em 0em;
+	}
+
+	.input-wrong {
+		border-color: var(--red);
+	}
+
+	.input-correct {
+		border-color: var(--green);
 	}
 
 	/********/
