@@ -1414,6 +1414,10 @@ a.bold {
 	padding: 0em 0.1em;
 }
 
+.btn-toggle:focus {
+	outline: none;
+}
+
 span.bar {
 	background-color: var(--gray);
 	width: 40px;
@@ -1424,7 +1428,7 @@ span.bar {
 }
 
 .btn-toggle.rotated .bar1 {
-	transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-10px, 6px);
 }
 
 .btn-toggle.rotated .bar2 {
