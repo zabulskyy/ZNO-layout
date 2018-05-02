@@ -593,7 +593,7 @@ body {
     .landing .bottom {
         display: flex;
         flex-flow: wrap row;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 0 1em;
 
     }
@@ -1207,7 +1207,7 @@ body {
     .landing .bottom {
         display: flex;
         flex-flow: wrap row;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 0 10em;
 
     }
