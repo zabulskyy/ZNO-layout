@@ -237,7 +237,7 @@ body {
   .content-image {
     height: 100%;
     width: 100%;
-    max-width: 25em;
+    max-width: 18em;
   }
   /* content checkboxes */
   .answers-checkbox {
@@ -285,7 +285,6 @@ body {
     margin-right: .5em;
     background-color: var(--very-light-gray);
     width: 1em;
-    height: 1em;
     text-align: center;
     padding: 0.5em;
   }
@@ -739,7 +738,6 @@ body {
     margin-right: .5em;
     background-color: var(--very-light-gray);
     width: 1em;
-    height: 1em;
     text-align: center;
     padding: 0.5em;
   }
@@ -868,7 +866,7 @@ body {
   .content-image {
     height: 100%;
     width: 100%;
-    max-width: 25em;
+    max-width: 15em;
     margin-left: 1em;
   }
   /***********/
