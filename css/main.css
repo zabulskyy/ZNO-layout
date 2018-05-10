@@ -257,7 +257,6 @@ body {
 
     }
 
-
     .content .task .timer {
         float: right;
         margin-top: 1em;
@@ -265,6 +264,7 @@ body {
         font-weight: bold;
         color: var(--dark-gray);
     }
+
     .content .task .timer.warning {
         color: var(--red) !important;
     }
@@ -278,6 +278,16 @@ body {
         height: 100%;
         width: 100%;
         max-width: 25em;
+    }
+
+    /*zoomable images*/
+    .zoomable {
+        cursor: unset;
+        transition: unset;
+    }
+
+    .zoomable:hover {
+        transform: unset;
     }
 
     /* content checkboxes */
@@ -393,12 +403,14 @@ body {
         background-image: url("../img/x-green.svg");
         border-color: var(--light-green);
     }
+
     /*wrong*/
     .active.wrong .cell-button {
         background-image: url("../img/x-red.svg");
         border-color: var(--light-red);
     }
-   /*disabled*/
+
+    /*disabled*/
     .active.disabled .cell-button {
         background-color: var(--light-gray);
         border-color: var(--light-gray);
@@ -419,7 +431,7 @@ body {
         padding-top: 0.5em;
     }
 
-    .answers-input{
+    .answers-input {
         display: flex;
         flex-flow: column wrap;
     }
@@ -428,7 +440,7 @@ body {
         margin-bottom: .5em;
     }
 
-    .cell-input{
+    .cell-input {
         width: 8em;
         border: 1px solid var(--light-gray);
         border-radius: 5px;
@@ -628,6 +640,7 @@ body {
         justify-content: center;
         margin: 0;
     }
+
     .text-input.search {
         border-radius: 17px;
         box-shadow: unset;
@@ -654,45 +667,45 @@ body {
 /* @media (min-width: 768px) STARTS */
 
 @media (min-width: 768px) {
-	.content .content-nav .progress-cells {
-		display: flex;
-		justify-content: space-evenly;
-		flex-flow: row;
-		margin: 1em 0;
-	}
+    .content .content-nav .progress-cells {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row;
+        margin: 1em 0;
+    }
 
-	.content .content-nav .progress-cells .progress-cell {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		margin: 1em 0;
-	}
+    .content .content-nav .progress-cells .progress-cell {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 1em 0;
+    }
 
-	.content .content-nav .label {
-		font-size: 18px;
-		color: var(--gray);
-		margin-bottom: .5em;
-	}
+    .content .content-nav .label {
+        font-size: 18px;
+        color: var(--gray);
+        margin-bottom: .5em;
+    }
 
-	.content .content-nav .info {
-		font-weight: bold;
-		font-size: 16px;
-		color: var(--dark-gray);
-	}
+    .content .content-nav .info {
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--dark-gray);
+    }
 
-	.content .content-nav img {
-		width: 96px;
-		height: 96px;
-	}
+    .content .content-nav img {
+        width: 96px;
+        height: 96px;
+    }
 
-	.content {
-		margin-top: 7em;
-		min-height: 50em;
-	}
+    .content {
+        margin-top: 7em;
+        min-height: 50em;
+    }
 
-	.content .content-nav {
-		padding: 0 5%;
-	}
+    .content .content-nav {
+        padding: 0 5%;
+    }
 }
 
 /* @media (min-width: 768px) ENDS */
@@ -739,6 +752,15 @@ body {
         color: var(--black);
     }
 
+    /*zoomable images*/
+    .zoomable {
+        cursor: pointer;
+        transition: all .4s ease;
+    }
+
+    .zoomable:hover {
+        transform: scale(2);
+    }
 
     /*progress*/
     .content .content-nav .progress-cells {
@@ -825,10 +847,10 @@ body {
         font-weight: bold;
         color: var(--dark-gray);
     }
+
     .content .task .timer.warning {
         color: var(--red) !important;
     }
-
 
     /* content checkboxes */
     .answers-checkbox {
@@ -943,11 +965,13 @@ body {
         background-image: url("../img/x-green.svg");
         border-color: var(--light-green);
     }
+
     /*wrong*/
     .active.wrong .cell-button {
         background-image: url("../img/x-red.svg");
         border-color: var(--light-red);
     }
+
     /*disabled*/
     .active.disabled .cell-button {
         background-color: var(--light-gray);
@@ -969,8 +993,7 @@ body {
         padding-top: 0.5em;
     }
 
-
-    .answers-input{
+    .answers-input {
         display: flex;
         flex-flow: row wrap;
     }
@@ -979,7 +1002,7 @@ body {
         margin-right: 1em;
     }
 
-    .cell-input{
+    .cell-input {
         width: 5em;
         border: 1px solid var(--light-gray);
         border-radius: 5px;
@@ -1477,3 +1500,4 @@ a:hover {
 .hidden {
     display: none;
 }
+
